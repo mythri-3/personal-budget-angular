@@ -3,103 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Budget</title>
+    <!--Added SEO change. Adding description in meta tag here-->
+    <meta name="description" content="Manage your personal budget effectively with our free budgeting app. Stay on track, receive alerts, and achieve financial success.">
+    <!--Modifying title as it is a SEO change-->
+    <title>Personal Budget - Free Budgeting App for Financial Success</title>
+    <!--Added SEO change. Adding keywords in meta tag here-->
+    <meta name="keywords" content="personal budget, budgeting app, financial success, budget management">
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
 
-    <div class="menu">
+    <!--Added semantic changes here. Adding nav tag here instead of div-->
+    <nav class="menu" aria-label="Main Menu"> <!--Added A11y change. Added aria-label attribute-->
+
         <ul>
             <li><a href="./index.html">Homepage</a></li>
             <li><a href="./about.html">About</a></li>
             <li><a href="./login.html">Login</a></li>
             <li><a href="https://google.com">Google</a></li>
         </ul>
-    </div>
+    </nav>
 
-    <div class="hero">
+    <div class="hero" role="banner">
         <h1>Personal Budget</h1>
         <h2>A personal-budget management app</h2>
     </div>
 
     <div class="container center">
-
-        <div class="page-area">
-
-            <div class="text-box">
+        <!--Modified div tag to main tag as it is a A11Y change-->
+        <main class="page-area" id="main-content"> <!--Added id attribute here as it is a A11Y change-->
+            <!--Added semantic changes here. Adding section tag here instead of div-->
+            <section class="text-box">
                 <h1>Stay on track</h1>
                 <p>
                     Do you know where you are spending your money? If you really stop to track it down,
                     you would get surprised! Proper budget management depends on real data... and this
                     app will help you with that!
                 </p>
-            </div>
+            </section>
     
-            <div class="text-box">
+            <section class="text-box">
                 <h1>Alerts</h1>
                 <p>
                     What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
                 </p>
-            </div>
+            </section>
     
-            <div class="text-box">
+            <section class="text-box">
                 <h1>Results</h1>
                 <p>
                     People who stick to a financial plan, budgeting every expense, get out of debt faster!
                     Also, they to live happier lives... since they expend without guilt or fear... 
                     because they know it is all good and accounted for.
                 </p>
-            </div>
+            </section>
     
-            <div class="text-box">
+            <section class="text-box">
                 <h1>Free</h1>
                 <p>
                     This app is free!!! And you are the only one holding your data!
                 </p>
-            </div>
+            </section>
     
-            <div class="text-box">
+            <section class="text-box">
                 <h1>Stay on track</h1>
                 <p>
                     Do you know where you are spending your money? If you really stop to track it down,
                     you would get surprised! Proper budget management depends on real data... and this
                     app will help you with that!
                 </p>
-            </div>
+            </section>
     
-            <div class="text-box">
+            <section class="text-box">
                 <h1>Alerts</h1>
                 <p>
                     What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
                 </p>
-            </div>
+            </section>
     
-            <div class="text-box">
+            <section class="text-box">
                 <h1>Results</h1>
                 <p>
                     People who stick to a financial plan, budgeting every expense, get out of debt faster!
                     Also, they to live happier lives... since they expend without guilt or fear... 
                     because they know it is all good and accounted for.
                 </p>
-            </div>
+            </section>
     
-            <div class="text-box">
+            <section class="text-box">
                 <h1>Free</h1>
                 <p>
                     This app is free!!! And you are the only one holding your data!
                 </p>
-            </div>
+            </section>
 
-        </div>
+        </main>
 
     </div>
 
-    <div class="bottom">
+    <!--Added semantic changes here. Adding footer tag here instead of div-->
+    <footer class="bottom">
         <div class="center">
-            All rights reserved &copy; Fabio Nolasco
+            All rights reserved &copy; Mythri
         </div>
-    </div>
+    </footer>
 
 </body>
 </html>
