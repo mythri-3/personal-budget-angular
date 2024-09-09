@@ -34,12 +34,12 @@ nav.menu ul li a {
 
 nav.menu ul li a:hover  {
     background-color: white;
-    color: #4d5791;
+    color: #3e7ca5;
 }
 
 div.hero {
     height: 350px;
-    background-color: #b0e0e6;
+    background-color: #b4c6f0;
     background-image: url('bg.png');
     background-size: 400px;
     background-repeat: no-repeat;
@@ -60,7 +60,7 @@ div.hero h1 {
 }
 
 div.hero h2 {
-    color: #4d5791;
+    color: #3e7ca5;
 }
 
 .container {
