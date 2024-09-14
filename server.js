@@ -1,33 +1,39 @@
+
 const express = require('express');
+const fs = require("fs");
 const app = express();
 const port = 3000;
 
 app.use('/', express.static('public'));
 
-const budget = {
-    myBudget: [
-        {
-            title: 'Eat out',
-            budget: 30
-        },
-        {
-            title: 'Rent',
-            budget: 350
-        },
-        {
-            title: 'Groceries',
-            budget: 90
-        },
-    ]
-};
 app.get('/hello', (req, res) => {
-    res.send('Hello world');
+    res.send('Hello World!');
 });
 
 app.get('/budget', (req, res) => {
-    res.json(budget);
+    fs.readFile("budget.json", "utf8", (err, data) => {
+        if (err) {
+          console.error(err);
+          res.status(500).send("Error reading data");
+          return;
+        }
+        const budgetData = JSON.parse(data);
+        res.json(budgetData);
+      });
 });
 
+app.get("/example", (req, res) => {
+    fs.readFile("example.json", "utf8", (err, data) => {
+      if (err) {
+        console.error(err);
+        res.status(500).send("Error reading data");
+        return;
+      }
+      const exampleData = JSON.parse(data);
+      res.json(exampleData);
+    });
+  });
+  
 app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`);
+    console.log(`API served at http://localhost:${port}`);
 });
