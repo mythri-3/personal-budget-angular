@@ -22,15 +22,15 @@ app.get('/budget', (req, res) => {
       });
 });
 
-app.get("/example", (req, res) => {
-    fs.readFile("example.json", "utf8", (err, data) => {
+app.get("/chart", (req, res) => {
+    fs.readFile("chart.json", "utf8", (err, data) => {
       if (err) {
         console.error(err);
         res.status(500).send("Error reading data");
         return;
       }
-      const exampleData = JSON.parse(data);
-      res.json(exampleData);
+      const chartData = JSON.parse(data);
+      res.json(chartData);
     });
   });
   
