@@ -155,7 +155,7 @@
         }
                // Fetch budget data from server and create the Chart.js doughnut chart
                function getBudget() {
-            axios.get('/budget')
+            axios.get('http://localhost:3000/budget')
                 .then(function (res) {
                     console.log("Fetched Budget Data:", res.data); // Log the data
                     for (var i = 0; i < res.data.myBudget.length; i++) {
@@ -174,7 +174,7 @@
       
         // Function to create the Bar Graph using Chart.js
         function getChartUsingD3JS() {
-            axios.get('/budget')
+            axios.get('http://localhost:3000/budget')
                 .then(function (res) {
                     const budgetData = res.data.myBudget;
                     console.log("D3 Budget Data:", budgetData); // Log D3 Data
@@ -235,7 +235,7 @@
 
         // Function to create Pie Chart using D3.js (Changed data)
         function getChart() {
-    axios.get('/chart')
+    axios.get('http://localhost:3000/chart')
         .then(function (res) {
             console.log("Pie Chart Data:", res.data.myBudget); // Log Pie Data
 
